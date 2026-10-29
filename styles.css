@@ -1,0 +1,29 @@
+@media print {
+    body > * {
+        visibility: hidden !important;
+    }
+
+    #receiptModal,
+    #receiptModal #printableReceipt,
+    #receiptModal #printableReceipt * {
+        visibility: visible !important;
+    }
+
+    #receiptModal {
+        position: absolute !important;
+        inset: 0 !important;
+        display: block !important;
+        background: #fff !important;
+        padding: 0 !important;
+    }
+
+    #receiptModal > div {
+        margin: 0 auto !important;
+        box-shadow: none !important;
+        border: 0 !important;
+    }
+
+    #receiptModal .flex.gap-2 {
+        display: none !important;
+    }
+}
